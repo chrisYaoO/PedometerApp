@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34248F12F69C590004937A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C34248EF2F69C58B004937A3 /* README.md */; };
 		C3B8D3142F68AD3200B6F20C /* PedometerApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C3B8D3132F68AD3200B6F20C /* PedometerApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C34248EF2F69C58B004937A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C3B8D30D2F68AD3200B6F20C /* PedometerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedometerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B8D3132F68AD3200B6F20C /* PedometerApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PedometerApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 		C3B8D3062F68AD3200B6F20C = {
 			isa = PBXGroup;
 			children = (
+				C34248EF2F69C58B004937A3 /* README.md */,
 				C3B8D3172F68AD3200B6F20C /* PedometerApp Watch App */,
 				C3B8D30E2F68AD3200B6F20C /* Products */,
 			);
@@ -169,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34248F12F69C590004937A3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
