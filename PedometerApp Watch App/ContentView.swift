@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var manager = PedometerManager()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 6) {
+            Text("Pedometer")
+                .font(.headline)
+            
+            Text("\(manager.steps)")
+                .font(.title2)
+            
+            Text("steps today")
+                .font(.caption)
+            
+            Text(manager.status)
+                .font(.title2)
+            
+            Button ("fetch"){
+                manager.fetchTodaySteps()
+            }
         }
         .padding()
     }
@@ -22,3 +35,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
