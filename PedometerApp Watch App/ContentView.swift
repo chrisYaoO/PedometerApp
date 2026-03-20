@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 6) {
             Text("Pedometer")
-                .font(.headline)
+                .font(.title2)
             
             Text("\(manager.steps)")
                 .font(.title2)
@@ -21,14 +21,21 @@ struct ContentView: View {
             Text("steps today")
                 .font(.caption)
             
-            Text(manager.status)
-                .font(.title2)
+//            Text(manager.status)
+//                .font(.title2)
             
-            Button ("fetch"){
-                manager.fetchTodaySteps()
-            }
+//            Button ("fetch"){
+//                manager.fetchTodaySteps()
+//            }
         }
         .padding()
+        .onDisappear{
+            manager.stopUpdate()
+        }
+        .onAppear{
+            manager.fetchTodaySteps()
+            manager.startUpdate()
+        }
     }
 }
 
